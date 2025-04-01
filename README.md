@@ -1,4 +1,3 @@
-
 # Projeto bevi-crud-frontend
 
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app) e é uma aplicação web para gerenciamento de CRUD (Create, Read, Update, Delete) de produtos.
@@ -33,6 +32,14 @@ npm -v
 
    ```bash
    yarn install
+   ```
+
+3. **Configurar variáveis de ambiente:**
+
+   Para que o projeto funcione corretamente, você precisa adicionar um arquivo chamado `.env` na raiz do projeto com a seguinte linha:
+
+   ```plaintext
+   REACT_APP_API_URL=http://34.71.240.100/api
    ```
 
 ## Executando o Projeto
