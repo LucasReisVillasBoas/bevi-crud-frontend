@@ -49,8 +49,7 @@ const CreateProduct: React.FC = () => {
     const validationErrors: string[] = [];
 
     if (!product.name) validationErrors.push("O nome é obrigatório.");
-    if (!product.description)
-      validationErrors.push("A descrição é obrigatória.");
+
     if (isNaN(product.price) || product.price <= 0)
       validationErrors.push("O preço deve ser um número positivo.");
     if (
@@ -122,7 +121,6 @@ const CreateProduct: React.FC = () => {
                 placeholder="Descrição do Produto"
                 value={product.description}
                 onChange={handleChange}
-                required
                 rows={3}
               ></textarea>
             </div>
