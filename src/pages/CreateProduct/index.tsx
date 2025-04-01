@@ -19,6 +19,7 @@ const CreateProduct: React.FC = () => {
 
   const [errors, setErrors] = useState<string[]>([]);
 
+  // Handle form input changes
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -43,6 +44,7 @@ const CreateProduct: React.FC = () => {
     }
   };
 
+  // Validate form
   const validateForm = (): boolean => {
     const validationErrors: string[] = [];
 
@@ -64,6 +66,7 @@ const CreateProduct: React.FC = () => {
     return validationErrors.length === 0;
   };
 
+  // Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

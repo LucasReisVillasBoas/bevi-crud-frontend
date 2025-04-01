@@ -21,6 +21,7 @@ const DeleteProductModal: React.FC<DeleteProductModalProps> = ({
 }) => {
   const { showFeedback } = useFeedback();
 
+  // Handle confirm delete
   const handleConfirmDelete = async () => {
     if (!product) return;
 

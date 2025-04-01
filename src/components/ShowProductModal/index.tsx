@@ -25,9 +25,10 @@ const ShowProductModalReadOnly: React.FC<ShowProductModalProps> = ({
     if (show && productId) {
       fetchProduct();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [show, productId]);
 
+  // Functionality to fetch product
   const fetchProduct = async () => {
     setLoading(true);
     setError(null);

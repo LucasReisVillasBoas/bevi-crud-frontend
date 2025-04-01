@@ -46,6 +46,7 @@ const ListProducts: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Functionality to update the product list
   const updateProductInList = (updatedProduct: ProductDTO) => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>

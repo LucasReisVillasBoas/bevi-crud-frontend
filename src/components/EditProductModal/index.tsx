@@ -25,6 +25,7 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Functionality to handle input changes
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -51,6 +52,7 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
     }
   };
 
+  // Functionality to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);

@@ -11,6 +11,7 @@ const Login: React.FC = () => {
   const navigate = useNavigate();
   const { showFeedback } = useFeedback();
 
+  // Handles form submission for login
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -22,9 +23,9 @@ const Login: React.FC = () => {
         data: loginData,
       });
 
+      // Store token and navigate upon successful login
       localStorage.setItem("token", data.access_token);
       showFeedback("Login bem-sucedido!", "success");
-      
       navigate("/");
     } catch (error: any) {
       showFeedback(error.message || "Erro ao fazer login", "error");
@@ -70,3 +71,4 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+
