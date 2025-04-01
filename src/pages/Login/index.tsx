@@ -63,6 +63,11 @@ const Login: React.FC = () => {
             <button type="submit" className="btn btn-primary w-100">
               Acessar
             </button>
+            <p className="mt-2 text-center" style={{ fontSize: "0.8rem" }}>
+              Use as credenciais: <br />
+              Email: <strong>lucas.reisvb@gmail.com</strong> <br />
+              Senha: <strong>7RW159qp</strong>
+            </p>
           </form>
         </div>
       </div>
@@ -71,4 +76,3 @@ const Login: React.FC = () => {
 };
 
 export default Login;
-
