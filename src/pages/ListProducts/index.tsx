@@ -90,7 +90,7 @@ const ListProducts: React.FC = () => {
           ) : error ? (
             <p className="text-danger">{error}</p>
           ) : (
-            <table className="table table-bordered table-striped">
+            <table className="table table-bordered table-striped table">
               <thead>
                 <tr>
                   <th>Nome</th>

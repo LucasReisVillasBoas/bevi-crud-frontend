@@ -11,3 +11,10 @@
 .padding-content {
   padding: 30px;
 }
+
+.table {
+  @media (max-width: 520px) {
+    overflow-x: auto; 
+    display: block;
+  }
+}
