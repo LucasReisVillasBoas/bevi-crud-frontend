@@ -37,7 +37,6 @@ const apiService = async (url: string, options: ApiServiceParams = {}) => {
 
     return response.data;
   } catch (error: any) {
-    console.error("Erro na requisição:", error);
     throw error.response ? error.response.data : error.message;
   }
 };

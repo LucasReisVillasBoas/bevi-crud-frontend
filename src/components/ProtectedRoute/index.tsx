@@ -8,7 +8,6 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ element }) => {
   const isAuthenticated = isTokenValid();
-  console.log("isAuthenticated", isAuthenticated);
 
   return isAuthenticated ? element : <Navigate to="/login" />;
 };

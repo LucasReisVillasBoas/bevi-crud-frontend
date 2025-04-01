@@ -57,7 +57,6 @@ const EditProductModal: React.FC<EditProductModalProps> = ({
     e.preventDefault();
     setLoading(true);
     setError(null);
-    console.log(editedProduct);
     try {
       const updatedProduct = await apiService(`/product/update`, {
         method: HttpMethod.PUT,
