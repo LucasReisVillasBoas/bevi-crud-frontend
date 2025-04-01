@@ -1,5 +1,5 @@
 
-# Projeto teste-crud-web
+# Projeto bevi-crud-frontend
 
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app) e é uma aplicação web para gerenciamento de CRUD (Create, Read, Update, Delete) de produtos.
 
@@ -17,8 +17,8 @@ npm -v
 1. **Clone o repositório:**
 
    ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd teste-crud-web
+   git clone https://github.com/LucasReisVillasBoas/bevi-crud-frontend
+   cd bevi-crud-frontend
    ```
 
 2. **Instale as dependências:**
